@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #374151;
+  
+    color: antiquewhite;
+
+}
+.container{
+    margin: 10px;
+}
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(to right, pink, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+
+}
+.addtask{
+    display: flex;
+   /* background-color: gray;
+    border-radius: 1rem;
+    padding: 1rem;
+    cursor: pointer; --> */
+    
+}
+#input{
+    appearance: none;
+    outline: none;
+    border: none;
+    background: #1f2937;
+    cursor: pointer;
+    flex: 1 1 0%;
+    width: 0;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 9px;
+    color:#fff;
+    font-size: 1.03rem;
+}
+
+#addtask{
+    appearance: none;
+    border: none;
+    outline: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, pink, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#addtask:hover{
+    opacity: 0.8;
+}
+#addtask:active{
+    opacity: 0.4;
+}
+.todo{
+    display: block;
+    margin-top: 4rem;
+    justify-content:space-between;
+    background-color: #1f2937;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.5rem;
+    font-size: 20px;
+
+}
+.text{
+    display: block;
+    color: red;
+    font-size: 1.2rem;
+    transition: 0.4s;
+    appearance: none;
+    outline: none;
+    background: none;
+    border: none;
+}
+.text:not(:read-only){
+    color: white;
+}
+.actions{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+ 
+}
+.actions button{
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    border: none;
+    margin: 0 0.05rem;
+    font-size: 1.3rem;
+    
+    
+}
+.edit{
+ color: blue;
+ background: none;
+}
+.edit:hover{
+    opacity: 0.8;
+}
+.delete{
+    color: crimson;
+    background: none;
+}
+.delete:hover{
+    opacity: 0.8;
+}
